@@ -6,4 +6,6 @@
 
 ## AUTOMATION
 
+Check out my projects on : 
+
 ## NO CODE - LOW CODE 
