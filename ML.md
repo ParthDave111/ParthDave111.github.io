@@ -2,7 +2,7 @@
 
 In the Decision tree, I have created 2 short project 
 
-Decision Tree Classifier: -
+Decision Tree Classifier: - Worked on Iris Data set to feature decision tree classifier with post pruning and prep running
 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/43ce7574-1ff9-4890-98ab-d1cf07c45588)
 
