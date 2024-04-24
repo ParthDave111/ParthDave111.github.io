@@ -10,7 +10,7 @@ My work on Text Analytics :[here](NLP.md)
 Finaical -Quant Data work :[here]
 ## AUTOMATION
 
-Generative AI (Large Language Models)
+Generative AI (Large Language Models)[here](genai.md)
 
 Check out my projects on : 
 
