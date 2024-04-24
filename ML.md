@@ -5,9 +5,9 @@
 
 I have created a diabetes prediction application using logistic regression to predict weather the person has diabetes or not. 
 
-**Project approach** :Data was collected from Kaggle and EDA was done. During EDA certain outliers excepts from"Insulin" columns were removed for analysis. Insulin sees to be one of the core parameter to judge diabetic condition.
-As insulin was higher , some of the column went through standard scaling process . Data was split into train -test in the ratio of 0.3 and logistic regression was applied. Hyperparamter tuning was done using grid search cv to find best parameters for logistic regression. Finally accuracy, precision and recall was calculated. 
+**Project approach** :Data was collected from Kaggle and EDA was done. During EDA certain outliers excepts from"Insulin" columns were removed for analysis. Insulin sees to be one of the core parameter to judge diabetic condition.As insulin was higher , some of the column went through standard scaling process . Data was split into train -test in the ratio of 0.3 and logistic regression was applied. Hyperparamter tuning was done using grid search cv to find best parameters for logistic regression. Finally accuracy, precision and recall was calculated. 
 
+PICKLE files were created for standard scaling and ML operation along with an UI based application file. To run this code directly, you have to open host file and upload 2 pickle file and application file 
 
 Dataset: [here](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
 
