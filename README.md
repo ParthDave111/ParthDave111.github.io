@@ -16,3 +16,7 @@ Check out my projects on :
 
 ## NO CODE - LOW CODE 
  Projects coming soon! 
+
+## Blogs 
+
+Read my blogs on Medium :[here]
