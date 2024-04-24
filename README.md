@@ -1,6 +1,6 @@
 #WELCOME TO PARTH DAVE'S PORTFOLIO 
 
-## About Me [here]
+## About Me [here](aboutme.md)
 
 ## DATA 
 Check my Data Science /Machine Learning portfolio here:[here](ML.md)
