@@ -13,3 +13,9 @@ Python Code :[here](https://github.com/ParthDave111/Movie-predictions--Cosine-Si
 Streamlit Code for UI :[here](https://github.com/ParthDave111/Movie-predictions--Cosine-Similarity/blob/main/ui.py)
 
 ## Natural Lnaguage Processing with Transformers (BERT -Hugging Face)
+
+##Project SPAM CLASSIFIER - MACHINE LEARNING BASED VS TRANSFORMER BASED 
+
+MACHINE LEARNING BASED - SPAM CLASSIFIER 
+
+TRANSFORMER BASED (BERT) 
