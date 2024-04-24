@@ -1,5 +1,17 @@
 ## Machine Learning Projects
 
+## Logistic Regression - Diabetes Prediction APP 
+![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/36648fb3-7685-40bf-9a8e-4e011bcf02b1)
+I have created a diabetes prediction application using logistic regression to predict weather the person has diabetes or not. 
+
+Project approach 
+
+
+Dataset: (https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
+Python code file :(https://github.com/ParthDave111/Diabetes-prediction-Logreg/blob/main/diabetes_prediction_logreg.ipynb)
+
+Business use case: When a person get medical report he has to show it to Doctor to get final verdict. He/she can leverage such appplication and can determine if he is diabetic or not. Further this project can also be connected with any IOT apps which monitor certain parameters like glucose, insulin level to notify person to be cautious with sugar intake
+
 
 ## Decision Tree 
 
