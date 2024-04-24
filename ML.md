@@ -2,9 +2,10 @@
 
 ## Logistic Regression - Diabetes Prediction APP 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/36648fb3-7685-40bf-9a8e-4e011bcf02b1)
+
 I have created a diabetes prediction application using logistic regression to predict weather the person has diabetes or not. 
 
-Project approach :Data was collected from Kaggle and EDA was done. During EDA certain outliers excepts from"Insulin" columns were removed for analysis. Insulin sees to be one of the core parameter to judge diabetic condition.
+**Project approach** :Data was collected from Kaggle and EDA was done. During EDA certain outliers excepts from"Insulin" columns were removed for analysis. Insulin sees to be one of the core parameter to judge diabetic condition.
 As insulin was higher , some of the column went through standard scaling process . Data was split into train -test in the ratio of 0.3 and logistic regression was applied. Hyperparamter tuning was done using grid search cv to find best parameters for logistic regression. Finally accuracy, precision and recall was calculated. 
 
 
