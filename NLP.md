@@ -1,4 +1,18 @@
-##Natural Language Processing - Traditional NLP with Machine Learning 
+## Natural Language Processing - Traditional NLP with Machine Learning 
+
+Micro learning - Strengthening the concept
+
+## Phase 1 : Data cleaning 
+
+# Regex 
+The black magic of programming was leveraged to understand data cleaning for Text Data 
+
+Code for Regex :[here](https://github.com/ParthDave111/NLP-Sentiment-analysis-and-text-mining/blob/main/regex.ipynb)
+
+
+#Named Entity Recognition 
+
+Code for NER :[HERE]https://github.com/ParthDave111/NLP-Sentiment-analysis-and-text-mining/blob/main/regex.ipynb
 
 
 
