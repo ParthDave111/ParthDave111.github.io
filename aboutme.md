@@ -16,14 +16,23 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 # AWS Solution Architect 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/868dde17-dca5-406c-8a21-0b3d7e60298d)
 
-The certificate can be validated here :https://www.credly.com/badges/a3eefaab-02f0-4868-b364-fa7d65689db0
-
+The certificate can be validated here :(https://www.credly.com/badges/a3eefaab-02f0-4868-b364-fa7d65689db0)
 
 
 ## POWER PLATFORM - FUNDAMENTAL 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/4107b271-4297-48c8-9d0e-f978dcfac0c2)
 
+## 2022
+
+
+# 2021 
+
+## 2020 
+
 # 2019 
+
+
+
 
 #Mini MBA 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/86c9e40b-936e-4a0c-b55a-c0eff4965967)
@@ -36,7 +45,8 @@ The certificate can be validated here :https://www.credly.com/badges/a3eefaab-02
 
 
 # 2017
-
+## LEAN SIX SIGMA GREEN BELT - IISE AND UNIV OF TORONTO 
+![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/fafdbde7-de0e-4548-a1d8-9f96b780acdd)
 
 
 
