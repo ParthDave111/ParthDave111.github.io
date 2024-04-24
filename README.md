@@ -5,7 +5,7 @@
 ## DATA 
 Check my Data Science /Machine Learning portfolio here:[here](ML.md)
 
-My work on Text Analytics :[here]
+My work on Text Analytics :[here](NLP.md)
 ## AUTOMATION
 
 Check out my projects on : 
