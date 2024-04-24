@@ -3,4 +3,6 @@
 
 
 FTX (Crypto Scam) :[here](https://medium.com/@parth.dave.ca/deciphering-the-ftx-scam-776d68ba90d6)
+
+
 ETF (SPY) -An Investment Product :[here](https://medium.com/@parth.dave.ca/etf-an-investment-product-overview-2f021acdbce1)
