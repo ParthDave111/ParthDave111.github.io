@@ -19,4 +19,4 @@ Check out my projects on :
 
 ## Blogs 
 
-Read my blogs on Medium :[here]
+Read my blogs on Medium :[here](medium.md)
