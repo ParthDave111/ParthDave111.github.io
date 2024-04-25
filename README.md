@@ -1,4 +1,4 @@
-#WELCOME TO PARTH DAVE'S PORTFOLIO 
+# WELCOME TO PARTH DAVE'S PORTFOLIO 
 
 ## About Me [here](aboutme.md)
 
@@ -21,3 +21,5 @@ Check out my projects on :
 ## Blogs 
 
 Read my blogs on Medium :[here](medium.md)
+
+Reach out to me [Linkedin](https://www.linkedin.com/in/parth-dave-a98612b7/)
