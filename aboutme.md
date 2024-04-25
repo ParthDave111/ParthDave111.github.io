@@ -20,6 +20,9 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 
 The certificate can be validated here :(https://www.credly.com/badges/a3eefaab-02f0-4868-b364-fa7d65689db0)
 
+## Power Platform - Developer Associate 
+![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/71afc4b1-a390-4a42-a195-367861a0a092)
+
 
 ## POWER PLATFORM - FUNDAMENTAL 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/4107b271-4297-48c8-9d0e-f978dcfac0c2)
