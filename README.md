@@ -23,3 +23,5 @@ Check out my projects on :
 Read my blogs on Medium :[here](medium.md)
 
 Reach out to me [Linkedin](https://www.linkedin.com/in/parth-dave-a98612b7/)
+
+Send Suggestions at :parth.dave.ca@gmail.com
