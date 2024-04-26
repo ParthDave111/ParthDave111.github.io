@@ -2,22 +2,21 @@
 
 ## About Me [here](aboutme.md)
 
-## DATA 
+## ANALYTICS
 Check my Data Science /Machine Learning portfolio here:[here](ML.md)
 
 My work on Text Analytics :[here](NLP.md)
 
 Finaical -Quant Data work :[here](finance.md)
 
+PROCESS MINING : 
+
 ## AUTOMATION
 
 Generative AI (Large Language Models)[here](genai.md)
 
-Check out my projects on : 
-
-## NO CODE - LOW CODE 
-
 ROBOTIC PROCESS AUTOMATION :[HERE](RPA.md)
+
 
 ## Blogs 
 
