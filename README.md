@@ -9,7 +9,7 @@ My work on Text Analytics :[here](NLP.md)
 
 Finaical -Quant Data work :[here](finance.md)
 
-PROCESS MINING : 
+PROCESS MINING : < COMMING SOON >
 
 ## AUTOMATION
 
