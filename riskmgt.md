@@ -1,8 +1,11 @@
 ## Risk Management [Automated] for a Bank offering Mortgages for Home 
 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/0aebb2fc-831e-421d-997a-3296b9d600bb)
+
 Business Case:
 A work flow was designed to address an ethical challenge for a bank. It was found that for a bank agents were manipulating documents for few commission and providing mortgages that were not ethical. 
+
+This demo project /POC can be very well establised using leveraging low code no code tools like power automate or blue prism. Here I am doing this on python. End to end code is available here [code](https://github.com/ParthDave111/financial-engineering-/blob/main/Bank_mortgage_.ipynb)
 
 Read more about this case: 19.	CBC News. "Real estate agents caught on hidden camera facilitating mortgage fraud for a fee." https://www.cbc.ca/news/business/marketplace-mortgage-fraud-1.6614132.
 
@@ -36,6 +39,9 @@ Risk assessment -Additional employment check : As in 2024, there are various lay
 
 8.Risk Check : Loan to value ratio : After the property is appraised do consider checking loan to value ratio. If Loan to value ratio is less than 80 then the customer has valid property deal in hand and if LTV is more than 80 bank should provide an encouragement to look for fair price property to customer. For LTV ratio more than 85% , it is not advisable for bank to continue and provide mortgage. 
  ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/ddb15a3c-feb0-44d6-99b3-6aca567d2970)
+
+
+ 
 
  
 
