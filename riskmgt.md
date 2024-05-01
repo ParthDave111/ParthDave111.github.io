@@ -9,7 +9,7 @@ This demo project /POC can be very well establised using leveraging low code no 
 
 Read more about this case: 19.	CBC News. "Real estate agents caught on hidden camera facilitating mortgage fraud for a fee." https://www.cbc.ca/news/business/marketplace-mortgage-fraud-1.6614132.
 
-Risk Management Explained 
+## Risk Management Explained 
 1. Risk Gate :Age of customer – As the home mortgages are of long length -25 years and 30 years we have incorporated an algorithm which will remove customer from queue for mortgage if the age is more than 45. Assuming customer get loan at the age of 45, he needs to make payment for next 25 years and he will be 70 by the end of mortgage. In north America average age to retire is 65. Just to be cautious that customer doesn’t default in retiring age this risk check is required. Additional having customer profile like health history and habits can be accounted to make more informed decision. If customer really wants mortgage then he should bring a younger co-signer for mortgage.  
  ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/bd42d2af-a0b3-485a-a457-d434c98f60a4)
 
