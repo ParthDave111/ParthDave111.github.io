@@ -20,7 +20,7 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 
 The certificate can be validated here :(https://www.credly.com/badges/a3eefaab-02f0-4868-b364-fa7d65689db0)
 
-Preparing for the same certification? Find my last minute preparation notes here[https://github.com/ParthDave111/Data-Science-/blob/main/Cloud/AWS%20Last%20Minute%20notes.pdf]
+Preparing for the same certification? Find my last minute preparation notes [Here](https://github.com/ParthDave111/Data-Science-/blob/main/Cloud/AWS%20Last%20Minute%20notes.pdf)
 
 ## Power Platform - Developer Associate 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/71afc4b1-a390-4a42-a195-367861a0a092)
