@@ -14,6 +14,11 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 
 ## Certification [Continuous Learning] 
 
+# 2024 
+
+# Microsoft AI Fundamaentals 
+<img width="404" alt="image" src="https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/d6049880-d984-4e01-88a4-f0949e091cd4">
+
 # 2023
 # AWS Solution Architect 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/868dde17-dca5-406c-8a21-0b3d7e60298d)
