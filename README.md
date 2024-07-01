@@ -1,6 +1,5 @@
 # WELCOME TO PARTH DAVE'S PORTFOLIO 
 
-## About Me [here](aboutme.md)
 
 ## ANALYTICS
 Check my Data Science /Machine Learning portfolio here:[here](ML.md)
@@ -23,5 +22,7 @@ ROBOTIC PROCESS AUTOMATION :[HERE](RPA.md)
 Read my blogs on Medium :[here](medium.md)
 
 Reach out to me [Linkedin](https://www.linkedin.com/in/parth-dave-a98612b7/)
+
+About Me [here](aboutme.md)
 
 Send Suggestions at :parth.dave.ca@gmail.com
