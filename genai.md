@@ -11,7 +11,7 @@
 
 Project Code :[here](https://github.com/ParthDave111/Generative-AI-/blob/main/Text_Summarization_medium.ipynb)
 
-## Translation Bot 
+## Translation Bot (English -Hindi)
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/6540c212-4017-4df5-8c5b-4b12c929f494)
 
 Project Code : 
