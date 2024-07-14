@@ -5,3 +5,11 @@
 
 ![Canada Gif](assets/Canada Geoson.gif)
 
+<html>
+<head>
+  <title>My Webpage with a GIF</title>
+</head>
+<body>
+  <img src="assets/Canada Geoson.giff" alt="Descriptive text for the GIF">
+</body>
+</html>
