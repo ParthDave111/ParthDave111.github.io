@@ -10,6 +10,6 @@
   <title>My Webpage with a GIF</title>
 </head>
 <body>
-  <img src="assets/Canada Geoson.giff" alt="Descriptive text for the GIF">
+  <img src="assets/Canada Geoson.gif" alt="Descriptive text for the GIF">
 </body>
 </html>
