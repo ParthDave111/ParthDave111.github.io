@@ -8,6 +8,8 @@ My work on Text Analytics :[here](NLP.md)
 
 Financial -Quant Data work :[here](finance.md)
 
+Geospatial Data Analysis :[here](geospatial_analysis.md)
+
 PROCESS MINING : < COMMING SOON >
 
 ## AUTOMATION
