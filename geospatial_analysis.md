@@ -5,11 +5,9 @@
 
 ![Canada Gif](assets/Canada Geoson.gif)
 
-<html>
-<head>
-  <title>My Webpage with a GIF</title>
-</head>
+Map Function in Colab
+
 <body>
   <img src="assets/Canada Geoson.gif" alt="Descriptive text for the GIF">
 </body>
-</html>
+
