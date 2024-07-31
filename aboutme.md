@@ -16,6 +16,10 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 
 # 2024 
 
+# Oracle Generative AI Professional 
+![image](https://github.com/user-attachments/assets/f82e2239-0294-4dbe-a7ce-f243c6716083)
+
+
 # Azure Data Science Associate
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/1c9c6028-27c2-4fdf-99b4-126510a1d6f5)
 
