@@ -10,6 +10,8 @@ ETF (SPY) -An Investment Product :[here](https://medium.com/@parth.dave.ca/etf-a
 
 ## Data Science 
 
+Skewness :[here](https://medium.com/@parth.dave.ca/skewness-269397f6f458)
+
 Managing Sensitivity to Outliers in Regression :[here](https://medium.com/@parth.dave.ca/managing-sensitivity-to-outliers-in-regression-b0c576649ad7)  Code:[here](https://github.com/ParthDave111/financial-engineering-/blob/main/Sensitivity_to_Outlier.ipynb)
 
 Feature Extraction in Time Series Analysis: [here](https://medium.com/@parth.dave.ca/feature-extraction-in-time-series-analysis-85b4915583da)
