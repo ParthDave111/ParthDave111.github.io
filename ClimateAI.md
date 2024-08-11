@@ -13,6 +13,7 @@ Day 1
 ## Project 1 - Land Usage and Land Coverage (LULC)
 
 This project is derived from EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification [Paper Link](https://arxiv.org/abs/1709.00029)
+and source of inspiration was this article [Article Link](https://www.wri.org/insights/7-things-know-about-ipccs-special-report-climate-change-and-land)
 
 Objective of the project 
 Objective 
