@@ -23,7 +23,7 @@ Mapping the extent of land use and land cover categories over time is essential 
 
 With the increasing availability of earth observation data coupled with recent advanced in computer vision, AI & EO has paved the way for the potential to map land use and land cover at an unprecedented scale. In this tutorial, we will explore the use of Sentinel-2 satellite images and deep learning models in Pytorch to automate LULC mapping.
 
-Objective of the project 
+# Objective of the project 
 Objective 
 
 1. train a deep learning model for image classification using Pytorch
