@@ -10,8 +10,15 @@ Increase in Green house Gas
 Day 1 
 
 
+## Project 1 - Land Usage and Land Coverage (LULC)
 
+This project is derived from EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification [Link](https://arxiv.org/abs/1709.00029)
 
+Objective of the project 
+Objective 
+
+1. train a deep learning model for image classification using Pytorch
+2. generate land use and land cover maps using Python GIS
 
 
 
