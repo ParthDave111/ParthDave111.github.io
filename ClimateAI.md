@@ -24,10 +24,10 @@ Objective
 Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categories using the EuroSAT dataset and a ResNet-50 CNN model.
 
 ## Project Flow 
- ** Data Preparation **
+
 |Content|Links |
 |:-:|:-:|
-
+| Step -01 Data Preparation|
 
 
 
