@@ -39,10 +39,16 @@ STEP 1 DATA PREPARATION
 |Data Loaders |PyTorch DataLoaders are created for each set to efficiently handle batching and shuffling during training.|
 
 STEP 2 EXPLORATORY DATA ANALYSIS 
+
+
+![image](https://github.com/user-attachments/assets/b0cf8a1b-e1ea-45c7-8046-0176c48438c5)
+
 |Steps|Explaination |
 |:-:|:-:|
 |Class Distribution|A histogram is plotted to visualize the distribution of the 10 LULC classes in the EuroSAT dataset. This helps understand potential class imbalances.
-Model Development:|
+
+
+
 
 
 
