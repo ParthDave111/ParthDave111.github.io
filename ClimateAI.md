@@ -1,13 +1,5 @@
-## Climate Change AI - Summer School 2024 
+## Climate Change AI - All Projects related to sustainability and Climate Change
 
-
-Defination of Climate Change 
-
-As per UNFCC "A change of climate is attributed directly or indirectly to human activity that alters the composition of the global atmosphere and which is in addition to natural climate variability observed over compared time period"
-
-Increase in Green house Gas
---
-Day 1 
 
 
 ## Project 1 - Land Usage and Land Coverage (LULC)
@@ -29,7 +21,10 @@ Objective
 1. train a deep learning model for image classification using Pytorch
 2. generate land use and land cover maps using Python GIS
 
+Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categories using the EuroSAT dataset and a ResNet-50 CNN model.
+
 ## Project Flow 
+ ** Data Preparation **
 |Content|Links |
 |:-:|:-:|
 
