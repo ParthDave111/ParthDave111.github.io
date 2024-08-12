@@ -18,7 +18,6 @@ Code :[here](https://github.com/ParthDave111/financial-engineering-/blob/main/An
 Simpy is powerful library designed for creating discrete event simulation. Here I have used simpy to createa a modeling system to understand probablity of default (PD) . 
 
 Probability of Default (PD) is statistical measure that estimates the likelihood of a borrower failing to meet their debt obligation within a specific time frame. Its crucial in doing credit risk assessment.
-![image](https://github.com/user-attachments/assets/81046405-ade3-4e4b-9160-107e8db982f6)
 
 ![image](https://github.com/user-attachments/assets/103edb12-5244-4945-b1cd-afb1272c4c40)
 
