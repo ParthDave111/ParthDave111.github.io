@@ -25,9 +25,12 @@ Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categor
 
 ## Project Flow 
 
-|Content|Links |
+
+
+|STEP 1 DATA PREPARATION |
+|Steps|Explaination |
 |:-:|:-:|
-| Step -01 Data Preparation|
+
 
 
 
