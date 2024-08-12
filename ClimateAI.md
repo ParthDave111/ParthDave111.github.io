@@ -70,6 +70,11 @@ ADDITIONAL STEPS
 
 Summary : [Colab Notebook](https://github.com/ParthDave111/Climate-Change-AI-Sumer-School-2024-/blob/main/Project%20Codes/LULC.ipynb)  provides a comprehensive workflow for LULC classification, covering data preparation, exploratory analysis, model selection, and the groundwork for training and evaluation.
 
+Application 
+This project can be applied to detect manual activities like urban expansion and deforestation 
+
+![image](https://github.com/user-attachments/assets/dcc45e2e-29f8-4c11-a2fa-f41c0245b850)
+
 
 
 
