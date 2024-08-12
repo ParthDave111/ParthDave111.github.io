@@ -45,9 +45,19 @@ STEP 2 EXPLORATORY DATA ANALYSIS
 
 |Steps|Explaination |
 |:-:|:-:|
-|Class Distribution|A histogram is plotted to visualize the distribution of the 10 LULC classes in the EuroSAT dataset. This helps understand potential class imbalances.
+|Class Distribution|A histogram is plotted to visualize the distribution of the 10 LULC classes in the EuroSAT dataset. This helps understand potential class imbalances|
 
 
+STEP 3  MODEL DEVELOPMENT
+
+![image](https://github.com/user-attachments/assets/74dc5562-79b2-4872-9a61-9345122d0215)
+
+Resnet 50 is selected as Deep neural networks are difficult to train due to the problem of vanishing or exploding gradients (repeated multiplication making the gradient infinitively small). ResNet solves this by using shortcut connections that connect activation from an earlier layer to a further layer by skipping one or more layers as shown below. This allows for gradients to propagate to the deeper layers before they can be reduced to small or zero values.
+
+|Steps|Explaination |
+|:-:|:-:|
+|ResNet-50 Selection|The ResNet-50 architecture is chosen for its ability to mitigate vanishing/exploding gradients through residual connections, enabling effective training of deep networks.|
+|Fine-tuning|The pre-trained ResNet-50 model is fine-tuned on the EuroSAT dataset to adapt it to the specific task of LULC classification.|
 
 
 
