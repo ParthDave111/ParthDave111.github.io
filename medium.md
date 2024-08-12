@@ -17,3 +17,18 @@ Managing Sensitivity to Outliers in Regression :[here](https://medium.com/@parth
 Feature Extraction in Time Series Analysis: [here](https://medium.com/@parth.dave.ca/feature-extraction-in-time-series-analysis-85b4915583da)
 
 Text Summarization using Transformer : [here](https://medium.com/@parth.dave.ca/text-summarization-using-transformer-e190e9550c9c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### “If you can't explain it simply, you don't understand it well enough.” ― Albert Einstein.
