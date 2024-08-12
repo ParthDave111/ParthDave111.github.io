@@ -38,7 +38,11 @@ STEP 1 DATA PREPARATION
 |Dataset Splitting |The dataset is randomly split into 70% for training, 15% for validation, and 15% for testing.|
 |Data Loaders |PyTorch DataLoaders are created for each set to efficiently handle batching and shuffling during training.|
 
-
+STEP 2 EXPLORATORY DATA ANALYSIS 
+|Steps|Explaination |
+|:-:|:-:|
+|Class Distribution|A histogram is plotted to visualize the distribution of the 10 LULC classes in the EuroSAT dataset. This helps understand potential class imbalances.
+Model Development:|
 
 
 
