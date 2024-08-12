@@ -59,8 +59,13 @@ Resnet 50 is selected as Deep neural networks are difficult to train due to the 
 |ResNet-50 Selection|The ResNet-50 architecture is chosen for its ability to mitigate vanishing/exploding gradients through residual connections, enabling effective training of deep networks.|
 |Fine-tuning|The pre-trained ResNet-50 model is fine-tuned on the EuroSAT dataset to adapt it to the specific task of LULC classification.|
 
+ADDITIONAL STEPS 
 
-
+|Steps|Explaination |
+|:-:|:-:|
+|Model Training|setting the stage for model training using the prepared data loaders and the chosen model architecture.|
+|Model Evaluation|After training, the model would be evaluated on the test set to assess its performance|
+|LULC Map Generation|The trained model could be used to generate LULC maps from new satellite images, showcasing the practical application of the classification model.|
 
 
 Summary : [Colab Notebook](https://github.com/ParthDave111/Climate-Change-AI-Sumer-School-2024-/blob/main/Project%20Codes/LULC.ipynb)  provides a comprehensive workflow for LULC classification, covering data preparation, exploratory analysis, model selection, and the groundwork for training and evaluation.
