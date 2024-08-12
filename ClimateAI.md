@@ -27,6 +27,7 @@ Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categor
 
 STEP 1 DATA PREPARATION 
 |Steps|Explaination |
+|:-:|:-:|
 |Download |The EuroSAT dataset is downloaded directly into the Colab environment.|
 |Custom Dataset Class|A custom EuroSAT class is defined to handle the dataset, enabling the application of transformations|
 |Image Transformations|Different transformations including random resizing, cropping, horizontal and vertical flips (for the training set), and normalization using ImageNet's mean and standard deviation.|
