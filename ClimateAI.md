@@ -26,6 +26,8 @@ Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categor
 ## Project Flow 
 
 STEP 1 DATA PREPARATION 
+![image](https://github.com/user-attachments/assets/a8207397-6aa3-4b60-bc5e-0e535c2dadb3)
+
 |Steps|Explaination |
 |:-:|:-:|
 |Download |The EuroSAT dataset is downloaded directly into the Colab environment.|
