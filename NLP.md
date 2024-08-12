@@ -52,6 +52,7 @@ Limitations and Future Improvements :
 While the system currently handles up to 5000 movies from the dataset, this presents an opportunity for future enhancement to scale and include more movies. This limitation has provided valuable insights into managing large datasets and optimizing system performance.
 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/ff4a21a2-1756-4ba4-9da4-9b47532e1931)
+
 Image from Streamlit UI 
 
 DATASET :[hERE](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
