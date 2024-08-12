@@ -31,7 +31,26 @@ Code for NER :[HERE]https://github.com/ParthDave111/NLP-Sentiment-analysis-and-t
 
 [code](https://github.com/ParthDave111/NLP-Sentiment-analysis-and-text-mining/blob/main/Dependency_paripynb_ipynb_txt.ipynb)
 
+
+
 ## Project : MOVIE RECOMMENDATION SYSTEM WITH COSINE SIMILARITY 
+
+Project Overview:
+This recommendation system leverages the TMDB 5000 movies dataset to provide personalized movie suggestions. By analyzing various features such as genres, keywords, cast, and crew, the system predicts movies that you might enjoy based on your preferences.
+
+Key Features:
+- Machine Learning Algorithms: Utilizes machine learning techniques to deliver accurate and relevant movie recommendations.
+- Streamlit Deployment: The entire project is hosted on Streamlit, ensuring an interactive and user-friendly interface.
+- User-Centric Design: Simple and intuitive UI for a seamless user experience.
+
+Technical Details:
+- Data Preprocessing: Cleaned and preprocessed the dataset to extract meaningful insights.
+- Similarity Measures: Implemented cosine similarity to find movies similar to user-selected films.
+- Interactive UI: Built with Streamlit to allow users to easily input their preferences and view recommendations.
+  
+Limitations and Future Improvements :
+While the system currently handles up to 5000 movies from the dataset, this presents an opportunity for future enhancement to scale and include more movies. This limitation has provided valuable insights into managing large datasets and optimizing system performance.
+
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/ff4a21a2-1756-4ba4-9da4-9b47532e1931)
 Image from Streamlit UI 
 
