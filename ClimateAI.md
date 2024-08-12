@@ -15,7 +15,7 @@ Day 1
 This project is derived from EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification [Paper Link](https://arxiv.org/abs/1709.00029)
 and source of inspiration was this article [Article Link](https://www.wri.org/insights/7-things-know-about-ipccs-special-report-climate-change-and-land , Data set [dataset](https://github.com/phelber/EuroSAT)
 
-Understanding Climate Impact by LULC
+## Problem Statement -Understanding Climate Impact by LULC
 
 Land use change such as deforestation and land degradation are among the primary drivers of these emissions. Rapid urbanization leading to an increase in built-up areas as well as a massive loss of terrestrial carbon storage can also result in large carbon emissions.
 
@@ -29,13 +29,15 @@ Objective
 1. train a deep learning model for image classification using Pytorch
 2. generate land use and land cover maps using Python GIS
 
+## Project Flow 
+|Content|Links |
+|:-:|:-:|
 
 
 
 
 
-
-
+Summary : [Colab Notebook](https://github.com/ParthDave111/Climate-Change-AI-Sumer-School-2024-/blob/main/Project%20Codes/LULC.ipynb)  provides a comprehensive workflow for LULC classification, covering data preparation, exploratory analysis, model selection, and the groundwork for training and evaluation.
 
 
 
