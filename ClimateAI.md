@@ -25,11 +25,14 @@ Aim :To classify satellite images into 10 Land Use and Land Cover (LULC) categor
 
 ## Project Flow 
 
-
-
-|STEP 1 DATA PREPARATION |
+STEP 1 DATA PREPARATION 
 |Steps|Explaination |
-|:-:|:-:|
+|Download |The EuroSAT dataset is downloaded directly into the Colab environment.|
+|Custom Dataset Class|A custom EuroSAT class is defined to handle the dataset, enabling the application of transformations|
+|Image Transformations|Different transformations are applied to the train, validation, and test sets, including random resizing, cropping, horizontal and vertical flips (for the training set), and normalization using ImageNet's mean and standard deviation.|
+|Dataset Splitting |The dataset is randomly split into 70% for training, 15% for validation, and 15% for testing.|
+|Data Loaders |PyTorch DataLoaders are created for each set to efficiently handle batching and shuffling during training.|
+
 
 
 
