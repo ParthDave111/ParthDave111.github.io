@@ -2,6 +2,8 @@
 
 Micro learning - Strengthening the concept
 
+## Check out my Work on NLP here : [Repo](https://github.com/ParthDave111/NLP-Sentiment-analysis-and-text-mining)
+
 ## Phase 1 : Data cleaning 
 
 # Regex 
