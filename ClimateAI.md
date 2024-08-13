@@ -82,6 +82,10 @@ This project can be applied to detect manual activities like urban expansion and
 ## Work In Progress
 
 Project 2 - NLP models for climate policy analysis 
+
+
 Project 3 - Forecasting EL nino with Machine learning
+
+
 Project 4  Reducing Climate impact when training ML MODEL [ Project based on Estimating carbon footprint of BLOOM 176B parameter LLM [Paper Link ](https://jmlr.org/papers/volume24/23-0069/23-0069.pdf)
 
