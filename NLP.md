@@ -2,6 +2,9 @@
 
 Micro learning - Strengthening the concept
 
+ [Back to Home Page](https://parthdave111.github.io/)
+
+
 ## Check out my all the work on NLP here : [Repo](https://github.com/ParthDave111/NLP-Sentiment-analysis-and-text-mining)
 
 ## Phase 1 : Data cleaning 
