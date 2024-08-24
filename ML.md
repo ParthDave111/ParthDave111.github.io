@@ -1,5 +1,17 @@
 ## Machine Learning Projects
 
+
+Machine learning is dominating almost every industry. To simply the application of Machine learning below are typical example of application .. and in coming years more can be added/developed.
+
+
+| Application     |How | Algorithm  |
+| --------- | --- | ----------- |
+| Predictions |looks at past data, adjusts for trends, and smooths out random changes to make predictions| ARIMA,LSTM |
+
+
+
+
+
 ## Logistic Regression - Diabetes Prediction APP 
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/36648fb3-7685-40bf-9a8e-4e011bcf02b1)
 
