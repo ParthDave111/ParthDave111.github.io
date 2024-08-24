@@ -7,6 +7,11 @@ Machine learning is dominating almost every industry. To simply the application 
 | Application     |How | Algorithm  |
 | --------- | --- | ----------- |
 | Predictions |looks at past data, adjusts for trends, and smooths out random changes to make predictions| ARIMA,LSTM |
+| Classification |finds patterns that separate one thing from another| XGBoost, logistical regression, SVM|
+| Generation |Creates new things only from the things it saw before.|GANs, Transformers|
+| Clustering |Groups similar things together without knowing what they are|K-means, hierarchical clustering|
+|Recommendation  |suggests things based on your past behavior around similar things you liked. |Two-Tower models, collaborative or content-based filtering|
+
 
 
 
