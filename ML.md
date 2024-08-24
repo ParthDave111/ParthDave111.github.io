@@ -11,6 +11,13 @@ Machine learning is dominating almost every industry. To simply the application 
 | Generation |Creates new things only from the things it saw before.|GANs, Transformers|
 | Clustering |Groups similar things together without knowing what they are|K-means, hierarchical clustering|
 |Recommendation  |suggests things based on your past behavior around similar things you liked. |Two-Tower models, collaborative or content-based filtering|
+|Anomaly Detection |Identifies outliers or unusual patterns that do not conform to expected behavior|Isolation Forest, Autoencoders|
+| Reinforcement Learning | Learns optimal actions through trial and error by maximizing rewards|Q-Learning, Deep Q-Networks|
+| Dimensionality Reduction | Reduces the number of variables under consideration by finding the most important features.|PCA, t-SNE|
+| Causal Inference |  Determines the cause-and-effect relationships from data.|Propensity Score Matching, Instrumental Variables|
+| Ranking |  Orders items or instances according to their relevance or importance, often used in search engines or recommendation systems.|RankNet, LambdaMART|
+
+
 
 
 
