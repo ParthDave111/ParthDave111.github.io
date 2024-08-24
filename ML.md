@@ -16,6 +16,26 @@ Machine learning is dominating almost every industry. To simply the application 
 | Dimensionality Reduction | Reduces the number of variables under consideration by finding the most important features.|PCA, t-SNE|
 | Causal Inference |  Determines the cause-and-effect relationships from data.|Propensity Score Matching, Instrumental Variables|
 | Ranking |  Orders items or instances according to their relevance or importance, often used in search engines or recommendation systems.|RankNet, LambdaMART|
+|Time Series Analysis | Analyzes data points collected or recorded at specific time intervals|Seasonal decomposition, Exponential Smoothing, Prophet|
+|Federated Learning |  Aggregates model updates from multiple devices without transferring raw data|Federated Averaging, Secure Aggregation|
+|Meta Learning (Learning to Learn)|  Learns from a variety of tasks to develop a model that can generalize|Model-Agnostic Meta-Learning (MAML), Prototypical Networks|
+|Active Learning| Focuses on uncertain or borderline examples to improve model performance|Uncertainty sampling, query-by-committee.|
+
+
+## - Misc Machine Learning /Deep learaning
+  1. Explainable AI
+  2. Computer Vision
+  3. Natural Language processing
+  4. Game AI [Alpha Zero]
+  5. Explainable Reinforcement Learning
+  6. Human-computer Interaction HCI
+  7. Semantic Segmentation
+  8. Knowledge graph
+  9. Automated Machine Learning
+  10. Cognitive Computing
+  11. Emotional AI
+  12. Algorithmic trading and AI
+
 
 
 
