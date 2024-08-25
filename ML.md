@@ -14,7 +14,7 @@ Machine learning is dominating almost every industry. To simply the application 
 |Anomaly Detection |Identifies outliers or unusual patterns that do not conform to expected behavior|Isolation Forest, Autoencoders|
 | Reinforcement Learning | Learns optimal actions through trial and error by maximizing rewards|Q-Learning, Deep Q-Networks|
 | Dimensionality Reduction | Reduces the number of variables under consideration by finding the most important features.|PCA, t-SNE|
-| Causal Inference[Casual Inference](https://github.com/ParthDave111/ParthDave111.github.io/blob/main/Casualinference.md) |  Determines the cause-and-effect relationships from data.|Propensity Score Matching, Instrumental Variables|
+| [Casual Inference](https://github.com/ParthDave111/ParthDave111.github.io/blob/main/Casualinference.md) |  Determines the cause-and-effect relationships from data.|Propensity Score Matching, Instrumental Variables|
 | Ranking |  Orders items or instances according to their relevance or importance, often used in search engines or recommendation systems.|RankNet, LambdaMART|
 |Time Series Analysis | Analyzes data points collected or recorded at specific time intervals|Seasonal decomposition, Exponential Smoothing, Prophet|
 |Federated Learning |  Aggregates model updates from multiple devices without transferring raw data|Federated Averaging, Secure Aggregation|
