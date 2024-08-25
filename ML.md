@@ -71,7 +71,7 @@ Decision Tree Classifier: - Worked on Iris Data set to feature decision tree cla
 Read code here: [Here](https://github.com/ParthDave111/Data-Science-/blob/main/Machine%20Learning/Decesion_Tree.ipynb)
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/user-attachments/assets/cb4e8feb-c1d6-4586-905f-1b1a3b0498f4)
 
