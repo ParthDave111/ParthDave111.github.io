@@ -22,7 +22,7 @@ Machine learning is dominating almost every industry. To simply the application 
 |Active Learning| Focuses on uncertain or borderline examples to improve model performance|Uncertainty sampling, query-by-committee.|
 
 
-## - Misc Machine Learning /Deep learaning
+## - Misc Machine Learning /Deep learning
   1. Explainable AI
   2. Computer Vision
   3. Natural Language processing
