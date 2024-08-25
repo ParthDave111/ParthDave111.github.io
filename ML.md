@@ -69,3 +69,7 @@ Decision Tree Classifier: - Worked on Iris Data set to feature decision tree cla
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/43ce7574-1ff9-4890-98ab-d1cf07c45588)
 
 Read code here: [Here](https://github.com/ParthDave111/Data-Science-/blob/main/Machine%20Learning/Decesion_Tree.ipynb)
+
+
+
+## While a man of pure intelligence may achieve the goal by the most casual of instructions, another may seek knowledge all his life and still remain bewildered - Ashtavakra"
