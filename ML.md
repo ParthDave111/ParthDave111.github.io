@@ -72,4 +72,9 @@ Read code here: [Here](https://github.com/ParthDave111/Data-Science-/blob/main/M
 
 
 
+
+![image](https://github.com/user-attachments/assets/cb4e8feb-c1d6-4586-905f-1b1a3b0498f4)
+
+
+
 ## While a man of pure intelligence may achieve the goal by the most casual of instructions, another may seek knowledge all his life and still remain bewildered - Ashtavakra"
