@@ -5,6 +5,10 @@
 
 ## Check out all my Quant based work [Repo](https://github.com/ParthDave111/Quant-and-Finance-File)
 
+## Financial Modeling work 
+
+1. Cooks Distance with Regression 
+
 
 ## Should you borrow money to invest?
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/c5d0e383-a654-4db7-9d08-c976171de33a)
