@@ -24,7 +24,7 @@ ROBOTIC PROCESS AUTOMATION :[HERE](RPA.md)
 
 MICROSOFT [Here](Microsoft.md)
 
-MLOPS [Here](url)
+MLOPS [Here](https://github.com/ParthDave111/ParthDave111.github.io/blob/main/MlOPS.md)
 
 ## Blogs 
 
