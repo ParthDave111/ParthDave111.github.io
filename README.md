@@ -24,6 +24,8 @@ ROBOTIC PROCESS AUTOMATION :[HERE](RPA.md)
 
 MICROSOFT [Here](Microsoft.md)
 
+MLOPS [Here](url)
+
 ## Blogs 
 
 Read my blogs on Medium :[here](medium.md)
