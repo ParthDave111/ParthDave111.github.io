@@ -77,11 +77,59 @@ This project can be applied to detect manual activities like urban expansion and
 
 ![image](https://github.com/user-attachments/assets/dcc45e2e-29f8-4c11-a2fa-f41c0245b850)
 
+## Project 2 Agile Modeling for Bioacoustic Monitoring
 
+## Problem statement
+
+The core problem this project addresses lies in biodiversity monitoring using large-scale, unlabeled audio data, as collected by inexpensive passive acoustic monitoring (PAM) devices. We present an integrated workflow for analyzing large unlabeled bioacoustic datasets, adapting new agile modeling techniques to the audio domain. The tools we provide enable users to adapt a classifier for a novel class (species, specific call type, etc...) with minimal overhead.
+
+_Our goal is to allow experts to create classifiers for new sounds in less than an hour
+_
+**Xeno-Canto** is a vast online repository of bird, insect, and bat sounds. It's a citizen science project where volunteers worldwide upload and share recordings of wildlife sounds.
+
+Google Perch :https://www.kaggle.com/models/google/bird-vocalization-classifier/tensorFlow2/bird-vocalization-classifier/4?tfhub-redirect=true
+
+This project aims to demonstrate the use of **active learning** techniques to produce an audio classifier for novel tasks.
+
+At a high level, active learning (aka "agile modeling") can be described as the process of bootstrapping dataset annotation by making use of an existing model, and then training a new classifier based on the bootstrapped dataset. The technique relies on a human-in-the-loop workflow to extract and produce a small subset of annotated data from the unlabeled dataset, which can then be used as training data for downstream tasks
+
+
+This project can be utilized when 
+1. The goal is to generate a custom classification model for a specialized task where enough labeled data is not enough to train a model from scratch
+2.  access to the existing model is available that performs an adjacent task
+
+## Key terminologies for the project /Learning
+
+Agile Modeling
+Agile modeling in the context of supervised machine learning can be described as “the process of turning any subjective visual concept into a computer vision model through real-time user-in-the-loop interactions” (Stretcu et al. 2023). In our setting, we go beyond the typical image and computer vision settings to explore the audio domain, where we transform a single labeled audio sample of a species vocalization into a bioacoustic classifier.
+
+Transfer Learning
+Transfer learning is a technique that relies on the reuse of a pre-trained model on a new task (different dataset from which it was trained). This technique assumes that the pre-training of the model produces a useful representation and knowledge that can be extended to the new task/setting. In the context of this tutorial, we use a model pre-trained on a large acoustic dataset of bird vocalizations (Xeno-Canto, focal recordings) to produce embeddings of a new soundscape dataset (passive recordings).
+
+Intuition: in the context of avian bioacoustics, transfer learning is useful for building a general representation that can translate to specific species or geographical regions, particularly when labeled data is scarcer. Using a pre-trained model with transfer learning lowers the machine learning overhead for field experts and practitioners who seek to understand and interpret unlabeled data, such as that from passive acoustic monitoring (PAM).
+
+Active Learning
+Active Learning is a general term for an iterative, supervised ML technique that efficiently makes use of labeled data to “learn the labels” or classify unlabeled data. This learning setting is particularly helpful in scenarios where unlabeled data is abundant and producing labels for that data is costly, requires expert knowledge, lots of manual work, etc.
+
+Embeddings
+At their core, neural networks function by learning new representations of data that help make the underlying patterns in the dataset more obvious. These representations are called embeddings. Concretely, an embedding is a point (or vector) in a high dimensional space. Data points with embeddings that are close to each other are likely to share salient traits.
+
+Bioacoustics and Biodiversity
+Listening is a fantastic way to understand an ecosystem. An extremely broad collection of animals use sound to communicate--from owls to orcas, from bats to bonobos--which provides us with the opportunity to listen in and learn what animals are in an ecosystem.
+
+We can also learn about the relationships between different animals: alarm calls indicate the presence of silent predators, and can even contain clues about what kinds of predators are nearby. We can measure how vocalizations change in response to differences in the natural environment (elevation, temperature, geographic location, seasonality) or in response to human interventions (restoration programs, logging, proximity to highways, etc.).
+
+## Main challenge of this project
+Bioacoustic surveys can generate thousands or even millions of hours of audio, far more than experts could ever listen to. As a result, we require machine learning tools which multiply the efforts of these experts. These tools must also allow us to work with staggering amounts of audio data efficiently.
+
+Additionally, new problems are appearing all the time: no single classifier is going to cover all the bases. There are thousands of species for which we don't have sufficient training data for traditional ML classifier training, especially in tropical areas where biodiversity is the greatest. Furthermore, we are often concerned with different types of vocalizations. If we can differentiate between juvenile and adult calls, we can measure a population's reproductive health efficiently. In other cases, different calls can help determine if an endangered species is nesting in an area (requiring a high degree of protection) or simply passing through the area. Needless to say, training data for these highly-specific problems often simply does not exist.
+
+As a result, training a single mega-classifier is not enough: We require flexible tooling which can capture new kinds of insights efficiently.
 
 ## Work In Progress
 
 Project 2 - NLP models for climate policy analysis 
+
 
 
 Project 3 - Forecasting EL nino with Machine learning
