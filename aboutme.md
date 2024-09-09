@@ -24,6 +24,11 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 ![image](https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/1c9c6028-27c2-4fdf-99b4-126510a1d6f5)
 
 
+## Climate Change AI Summer School 
+![image](https://github.com/user-attachments/assets/539dbc90-5f83-46db-9de2-24064f7978c0)
+
+
+
 # Microsoft AI Fundamaentals 
 <img width="404" alt="image" src="https://github.com/ParthDave111/ParthDave111.github.io/assets/123885634/d6049880-d984-4e01-88a4-f0949e091cd4">
 
