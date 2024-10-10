@@ -31,5 +31,15 @@ A modified CIR_simulation function is introduced to ensure the simulated rates d
 # Conclusion:
 
 The notebook provides a framework for calibrating the CIR model to market data and using it for interest rate simulation.
+![image](https://github.com/user-attachments/assets/a17ab2e7-698a-4ac6-b258-6c794eb1cb58)
+
 The Monte Carlo simulation allows for the estimation of future interest rate distributions, confidence intervals, and expected values.
+![image](https://github.com/user-attachments/assets/3b081cc2-a4d3-4aff-b0f5-fe40454beafe)
+
 The steps taken to resolve potential NaN value issues ensure the robustness of the simulation results.
+
+![image](https://github.com/user-attachments/assets/9adae346-7910-4074-9e50-74a6fe9e71bc)
+
+![image](https://github.com/user-attachments/assets/d9a88a95-117e-4e13-b722-aa01590bf392)
+
+
