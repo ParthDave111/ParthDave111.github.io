@@ -8,6 +8,7 @@
 ## Financial Modeling work 
 
 1. Cooks Distance with Regression [Cooks Distance](https://github.com/ParthDave111/ParthDave111.github.io/blob/main/assets/Financial%20and%20Quant/Cooksdistance.md)
+2. Cox-Ingersoll-Ross (CIR) model [CIR MOdel]
 
 ## Pricing 
 
