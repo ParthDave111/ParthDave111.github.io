@@ -28,7 +28,7 @@ The notebook addresses potential issues with NaN (Not a Number) values in the si
 A modified CIR_simulation function is introduced to ensure the simulated rates do not fall below a certain threshold, preventing NaN values.
 
 
-##Conclusion:
+#Conclusion:
 
 The notebook provides a framework for calibrating the CIR model to market data and using it for interest rate simulation.
 The Monte Carlo simulation allows for the estimation of future interest rate distributions, confidence intervals, and expected values.
