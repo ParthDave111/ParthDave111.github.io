@@ -43,3 +43,4 @@ The steps taken to resolve potential NaN value issues ensure the robustness of t
 ![image](https://github.com/user-attachments/assets/d9a88a95-117e-4e13-b722-aa01590bf392)
 
 
+Colab File : [CIR MODEL](https://github.com/ParthDave111/Quant-and-Finance-File/blob/main/CIR(1995)_.ipynb)
