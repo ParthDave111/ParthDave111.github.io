@@ -34,4 +34,8 @@ Reach out to me [Linkedin](https://www.linkedin.com/in/parth-dave-a98612b7/)
 
 About Me [here](aboutme.md)
 
+Work Diary [here](url)
+
 Send Suggestions at :parth.dave.ca@gmail.com
+
+
