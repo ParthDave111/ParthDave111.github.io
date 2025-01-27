@@ -22,7 +22,7 @@ points, and returns are classified into three groups.
 
 ![image](https://github.com/user-attachments/assets/0692637c-cfff-4998-b5f9-6da25f70bf84)
 
-Code : 
+Code : [Here](https://github.com/ParthDave111/Learnings-/blob/main/K_Mean_Clustering.ipynb)
 
 
 
