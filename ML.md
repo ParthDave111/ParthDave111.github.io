@@ -1,9 +1,9 @@
 ## Machine Learning Projects
 
 
-## Machine Learning works 
+## Machine Learning works [Orignal works]
 
-##1. K Mean Clustering Article
+## 1. K Mean Clustering Article
 2. Principle component Analysis
 3. Regression Tree
 
