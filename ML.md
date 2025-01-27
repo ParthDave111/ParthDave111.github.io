@@ -35,16 +35,20 @@ Code :
 **1. Dimensionality reduction**. PCAs is usually known to reduce the number of variables and make it easier
 to visualize data for further analysis. In the case of financial datasets, which often contain lots of
 variables, PCA helps in simplifying the number of variables while retaining core insight of the dataset.
+
 **2. Noise reduction** PCA can effectively handle random noise within a data set, while structured noises
 might require further analysis. By focusing on significant components, PCA helps in filtering out noises
 from the data set. When it comes to financial data, there is noise within it due to irrelevant fluctuation,
 which can diverge the analysis of underlying trends. To deal with this noise, PCA can be leveraged to
 filter out the noise and focus only on a principal component that captures the most significant variance
 within the financial data set. Noise reduction is usually done before using a data set for further
-modeling.
-**3.Feature engineering **: PCA can be leveraged to create new features from existing model that can be
+modeling
+
+**3.Feature engineering ** : PCA can be leveraged to create new features from existing model that can be
 used to predict more information. This created features can be also used for machine learning algorithm
 for forecasting stock price or generating trading signal from generated PCA
+
+
 **4.Visualization** : PCA reduces high-dimensional data and noise into two or three dimensions, and it
 makes it easier to visualize complex relationship and hidden patterns of the data through scatter plot or
 3D plot
