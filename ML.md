@@ -16,6 +16,16 @@ Guide:  with inputs, our dataset should be with numerical features, number of cl
 
 **Hyperparameters:** this includes the number of clusters or the number of groups. Secondly the initialization method which defines how centroids are chosen. In addition, the max iterations that control the maximum number of iterations allowed in our model and finally, the tolerance level which determines convergence threshold.
 
+**Illustration**: analysis for three stock returns, BA, WMT and AAPL, from three different sectors, we
+can identify how returns are different to each other. Below Elbow we have selected 3 as cluster
+points, and returns are classified into three groups.
+
+![image](https://github.com/user-attachments/assets/0692637c-cfff-4998-b5f9-6da25f70bf84)
+
+Code : 
+
+
+
 
   
 2. Principle component Analysis
