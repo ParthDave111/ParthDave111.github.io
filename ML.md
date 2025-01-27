@@ -4,6 +4,20 @@
 ## Machine Learning works [Orignal works]
 
 ## 1. K Mean Clustering Article
+
+**Advantages**: Simple and easy to implement, also it scales well to the large datasets. In practice, K-means is efficient in terms of computation. As well as works well with linear clusters.
+
+**Disadvantages:** There are some disadvantages in K-means cluster which includes the user to input the required number of clusters before running the analysis. Also, the model is  sensitive to the initial placement of centroids, which may lead to suboptimal solutions. In addition, the model is not suitable for non-linear clusters. Outliers can significantly skew results.
+
+![image](https://github.com/user-attachments/assets/16192d9a-e4a8-462c-9802-e5020f9bee2b)
+
+**Features:** which has assumed that the data is numeric, with NA values we should preprocess to handle them.
+Guide:  with inputs, our dataset should be with numerical features, number of clusters  initialization method. And with output, the cluster labels would be given for each data point, centroids of the clusters, and inertia scores.
+
+**Hyperparameters:** this includes the number of clusters or the number of groups. Secondly the initialization method which defines how centroids are chosen. In addition, the max iterations that control the maximum number of iterations allowed in our model and finally, the tolerance level which determines convergence threshold.
+
+
+  
 2. Principle component Analysis
 3. Regression Tree
 
