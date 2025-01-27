@@ -7,7 +7,7 @@
 2. Principle component Analysis
 3. Regression Tree
 
-
+--------------
 
 Machine learning is dominating almost every industry. To simply the application of Machine learning below are typical example of application .. and in coming years more can be added/developed.
 
