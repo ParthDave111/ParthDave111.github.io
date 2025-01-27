@@ -29,7 +29,50 @@ Code :
 
   
 2. Principle component Analysis
-3. Regression Tree
+
+**Advantages**
+
+**1. Dimensionality reduction**. PCAs is usually known to reduce the number of variables and make it easier
+to visualize data for further analysis. In the case of financial datasets, which often contain lots of
+variables, PCA helps in simplifying the number of variables while retaining core insight of the dataset.
+**2. Noise reduction** PCA can effectively handle random noise within a data set, while structured noises
+might require further analysis. By focusing on significant components, PCA helps in filtering out noises
+from the data set. When it comes to financial data, there is noise within it due to irrelevant fluctuation,
+which can diverge the analysis of underlying trends. To deal with this noise, PCA can be leveraged to
+filter out the noise and focus only on a principal component that captures the most significant variance
+within the financial data set. Noise reduction is usually done before using a data set for further
+modeling.
+**3.Feature engineering **: PCA can be leveraged to create new features from existing model that can be
+used to predict more information. This created features can be also used for machine learning algorithm
+for forecasting stock price or generating trading signal from generated PCA
+**4.Visualization** : PCA reduces high-dimensional data and noise into two or three dimensions, and it
+makes it easier to visualize complex relationship and hidden patterns of the data through scatter plot or
+3D plot
+Also, in general, principal component analysis to provide improvement in model performance by
+removing noise; it can also help in reducing overfitting and emphasizing generalization. The top-notch
+benefit of principal component analysis is that it increases the computational speed
+
+**Basic Definition of Principal component Analysis**
+Principal component analysis (PCA) is a statistical technique used to reduce the dimensionality of a
+dataset while preserving core information.
+
+**Computation of PCA**
+Principal component analysis involve statistical methods which reduces dimension of dataset without
+losing core information. This is achieved by identifying the direction of maximum variance in data which
+are termed as principal component.
+To generalize computation of principal component analysis, it is done in six steps
+
+**1. Standardization**
+Standardization is used to transform data in such a way that each feature has mean of zero and standard
+deviation of 1
+
+Standardization is required in principal component analysis to scale feature those dominates the PCA
+which leads to biased result as well as to make sure that all feature contributes equally to the required
+analysis
+Assuming dataset X with n sample and p columns (aka features), statistically standardization is
+calculated as
+  
+4. Regression Tree
 
 --------------
 
