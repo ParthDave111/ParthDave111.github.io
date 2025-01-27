@@ -29,7 +29,7 @@ Code : [Here](https://github.com/ParthDave111/Learnings-/blob/main/K_Mean_Cluste
 
 
   
-2. Principle component Analysis
+**2. Principle component Analysis**
 
 **Advantages**
 
