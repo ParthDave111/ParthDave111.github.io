@@ -4,6 +4,8 @@
 ## ANALYTICS
 Check my Data Science /Machine Learning portfolio here:[here](ML.md)
 
+Deep Learning :[here](DL.md)
+
 Climate Change AI :[here](ClimateAI.md)
 
 My work on Text Analytics :[here](NLP.md)
