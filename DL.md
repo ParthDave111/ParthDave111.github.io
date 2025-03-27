@@ -349,6 +349,123 @@ Subsequently, we use the model predictions to implement a dynamic trading strate
 ![image](https://github.com/user-attachments/assets/6420a4f2-60e3-4426-bca0-2c278b75614a)
 
 
+The results suggest overall model performance varies across different asset classes, with GLD showing
+the best predictive capability with both the lowest MSE and highest R² values across in-sample and
+out-of-sample data. This could be due to the fact that Gold is considered a 'safe have' asset particularly
+during the peridos of high volatility, as it tends to have more stable returns compared to ther asset
+classes (Baur & Lucey, 2010).
+SHY had the weakest performance, with negative R² in both in-sample and out-of-sample evaluations,
+indicating poor model fit. Other tickers such as DBO, SPY, and TLT performed moderately, with
+reasonably low MSE values and positive R² in the out-of-sample evaluation. Cash-Like assets such as SHY
+which are typically low-volaity and low-return instruments might not show clear predictable trneds over
+shorter time periods as they tend to relfeclt macro factors like interest rate exhanges which a re a bit
+complex to capture in the model mainly using past returns (Campbell & Shiller, 1991).
+
+
+
+##  Trading Strategy and Back test result
+
+For trading we are considering top 2 asset as long and bottom 2 as short. We have analyzed buy and hold
+strategy with our considered strategy to long top 2 asset and short 2 asset
+
+![image](https://github.com/user-attachments/assets/d5081847-1f2c-42a1-b9f8-aa0db877b527)
+
+The results suggest that the LSTM strategy performed much better than the buy-and-hold strategy over
+the long term. LSTM models are particularly effective in capturing complex, non-linear relationships in
+financial data, which gives them an edge over traditional strategies like buy-and-hold in the long run
+(Fischer & Krauss, 2018). Unlike traditional models, which fail to account for long-term dependencies and
+temporal dynamics, LSTM networks are designed to capture these dependencies, leading to improved
+predictive performance (Hochreiter & Schmidhuber, 1997).
+
+## Multi Output Model
+we are implementing a multi-output deep learning model that integrates the inputs from the
+5 individual models in the previous section to predict the 25-day ahead returns for each of the 5 ETFs,
+then using these predictions to create and backtest a new trading strategy, comparing its performance
+against both a Buy-and-Hold strategy and the LSTM strategy.
+Multi output Model Architecture
+To analyse time series in a sequence , sequential model is utlized with LSTM layer with a dropout layer to
+prevent overfitting which is followed by a hidden desne layer with 64 neurons and RELU activation
+function. Output of this hidden dense layer is consider input for another drop out layer to regularize and
+then with a dense layer which adds the output layer with 5 neurons. The role of dense layer is to
+produce 5 different output value for each if the 5 asset class. In terms of model compilation it is
+configured with an ADAM optimizer which is considered as an effective for neural network and to
+minimize loss function. Model was trained with 50 epochs and 20% of initial data was considered for
+validation.
+
+
+![image](https://github.com/user-attachments/assets/a7f35435-cb4c-45d3-bef2-7d50b7a7180c)
+
+The backtesting results indicate that the LSMT architectural model outperformed both the Multi-Output
+Strategy and the Equal-Weighted Buy & Hold strategy, with the highest final cumulative return of
+1.189196. This suggests that the LSMT model, involved a more focused asset allocation based on
+predictions, was successful in leveraging the forecasted market trends to generate better returns. On the
+other hand, the Multi-Output Strategy had a final cumulative return of 1.040997, which, while positive,
+lagged behind LMST model strategy, indicating that the integration of predictions from all asset classes
+might have introduced some complexity or diversification that slightly reduced its efficiency (Fischer &
+Krauss, 2018).
+The Equal-Weighted Buy & Hold strategy had the lowest final cumulative return of 0.994105, which is
+expected, as buy-and-hold strategies are typically less responsive to market conditions and do not take
+into account predictive models or market signals (Zhang & Xie, 2019). It shows the traditional method of
+holding assets equally weighted over the long term without any active rebalancing based on predictions,
+which is often less effective in volatile or dynamic markets (Hassan & Ranjan, 2018) compared to
+strategies that adjust based on predicted trends.
+Backtesting Performance and Predictability Discussion: Multi-Output vs Single-Output Models
+
+![image](https://github.com/user-attachments/assets/a94037ee-dc2b-4312-b8b2-8cf38bc0db8c)
+![image](https://github.com/user-attachments/assets/39927c82-4714-471b-9989-f30af6393ef8)
+
+## Conclusion
+
+To conclude, our analysis has provided valuable insights into the effectiveness of two distinct
+trading strategies using Long Short-Term Memory (LSTM) models.
+Firstly, the LSTM (single-output) model has proven to be a more effective choice for active
+trading strategies, showcasing its ability to capture temporal patterns and making it well-suited
+for dynamic decision-making. This model aligns with the nature of active trading, where
+short-term market movements and timely responses are critical.
+On the other hand, the Multi-output model excels in passive screening and relative scoring.
+While it offers valuable insights for asset ranking and comparative evaluation, its performance in
+backtesting has shown to be less alpha-rich. This model is more suited for strategic portfolio
+diversification and long-term decision-making, where rankings and relative performance are
+prioritized over immediate market signals.
+Ultimately, both models provide complementary predictive insights. However, our findings
+suggest that performance is significantly enhanced when ranking-based allocation is integrated
+with temporal predictability. This combination allows for more informed decision-making, making
+it the more robust model for real-world trading strategies.
+
+References for Project 2 
+
+1. Oliveira, N. A. C. P. P., & de M., M. G. F. P. (2014). Fat tails and extreme risk. Physica A:
+Statistical Mechanics and its Applications, 413, 1-12.
+https://doi.org/10.1016/j.physa.2014.06.039
+2. Black, F., & Litterman, R. (1992). Global portfolio optimization. Financial Analysts
+Journal, 48(5), 28-43. https://doi.org/10.2469/faj.v48.n5.28
+3. Shumway, R. H., & Stoffer, D. S. (2017). Time Series Analysis and Its Applications: With
+R Examples (4th ed.). Springer.
+4. Baur, D. G., & Lucey, B. M. (2010). Is Gold a Hedge or a Safe Haven? An Analysis of
+Stocks, Bonds and Gold. Financial Review, 45(2), 217–229.
+5. Campbell, J. Y., & Shiller, R. J. (1991). Yield Spreads and Interest Rates: A Broad
+Historical Perspective. The Journal of Economic Perspectives, 5(2), 129–152.
+6. Fischer, T., & Krauss, C. (2018). Deep learning with long short-term memory networks
+for financial prediction. European Journal of Operational Research, 270(2), 654-669.
+7. "Simple Vanilla RNN and LSTM Implementation." Kaggle, 2023,
+www.kaggle.com/code/manan5598/simple-vanilla-rnn-and-lstm-implementation.
+8. Brownlee, Jason. "How to Use Dropout on LSTM Networks for Time Series Forecasting."
+Machine Learning Mastery, 28 Sept. 2020,
+machinelearningmastery.com/use-dropout-lstm-networks-time-series-forecasting/.
+9. S. Siami-Namini, N. Tavakoli and A. S. Namin, "The Performance of LSTM and BiLSTM
+in Forecasting Time Series," 2019 IEEE International Conference on Big Data (Big
+Data), Los Angeles, CA, USA, 2019, pp. 3285-3292, doi:
+10.1109/BigData47090.2019.9005997
+10. Bhardwaj, Rahul. "Five Practical Applications of the LSTM Model for Time Series with
+Code." Towards Data Science, 18 Oct. 2020,
+towardsdatascience.com/five-practical-applications-of-the-lstm-model-for-time-series-wit
+h-code-a7aac0aa85c0/.
+
+## Project 3 Time series with variation of walk forward and alleviating leakage of information 
+
+![image](https://github.com/user-attachments/assets/8a179872-c4e5-4ee6-9527-935300596e3f)
+
+Code: 
 
 
 
