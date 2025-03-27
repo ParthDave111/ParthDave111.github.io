@@ -2,6 +2,256 @@
 
 ![image](https://github.com/user-attachments/assets/cddbee59-a1aa-4c10-ac9e-deb1f03229a8)
 
+image is only for reference 
+
 Code : 
+
+Project Report 
+
+In this report, we document our process of developing and evaluating deep learning models for
+predicting financial time series, focusing on optimizing parameter configurations for trading
+models. We began by analyzing the properties of a chosen security’s (NVIDIA stock) price data
+in its original form, a stationary transformation, and a fractionally differenced version. We fetched
+data from Yahoo Finance for the period 01-01-20217 to 01-01-2025.
+Next, we implemented Multi-Layer Perceptron (MLP) models to predict each version of the time
+series and assess their performance. To further enhance prediction accuracy, we transformed the
+data into image representations using Gramian Angular Field (GAF) and trained Convolutional
+Neural Networks (CNNs) on these representations. We then compared the predictive capabilities
+of MLPs and CNNs, evaluating their effectiveness based on model performance metrics.
+Our findings provide insights into how different data transformations impact predictive accuracy
+and how model architecture influences performance in time series forecasting.
+Finally, we have summarized result of step 2 and step 3 in final page of the report with our
+recommendation.
+
+## Step 1: Analysing the Properties of NVIDIA Stock Price
+After thorough brainstorming, we decided to do a time series analysis on equity (NVIDIA). During
+the discussion, it was emphasized to research and analyze NVDA stock as it has high liquidity and
+volatility within the data.
+
+## Data collection:
+To get 2000 observation points, data from 20th Jan 2017 to 1st Jan 2025 was considered
+Statistical Analysis:
+For 2000 observations, when the price was analyzed, the mean was around 25.90 as the losing
+price. There was a standard deviation of 34.44 and the minimum price point of the observation
+was 2.35, while the maximum price point of the observed data was 148.86. 
+
+![image](https://github.com/user-attachments/assets/b9aed75a-38e9-43e9-ac49-8f576607bedb)
+
+The skewness (a measure of the asymmetry of distribution) of the data was around 2.126, which
+means it was positively skewed and the distribution was longer on the right side. Also, Kurtosis
+(tailedness) was around 3.58 for all the observations.
+From skewness and kurtosis, we were able to come to conclusion that data is not normally
+distributed and might require transformation for non-parametric statistical analysis in the future
+part of the GWP.
+Persistence is the tendency of a time series to retain its current state. Mainly for persistence
+analysis, the autocorrelation function is leveraged. The autocorrelation function (ACF) can help in
+identifying seasonality, hidden patterns, and dependencies in time series data. 
+
+![image](https://github.com/user-attachments/assets/b3c507e8-aa98-469a-812c-d6ad823d6b48
+
+While analyzing ACF, we discovered the following interpretation from our observation in the time
+series :
+● There was strong initial autocorrelation as the chart started with high autocorrelation as it
+was close to 1.0 at lag 0. This suggested that time series might be perfectly correlated with
+itself
+● Discovery of short-term memory as autocorrelation drops sharply within the range of 0-
+250, and it was interpreted that past values quickly lose their predictive power for future
+values. This can also be related to the fundamental growth of stock within the period of
+2017-2018.
+● A short-term cycle or seasonality was also discovered while looking at data at 1500, but
+seasonality is not very strong
+● For the lags beyond 1000, auto correlation dips into negative territory, and it can be
+interpreted that there is negative correlation from past data.
+● ACF decays faster as it was visible in the chart, and it doesn't show any persistent and longterm pattern, which concludes that the time series is most likely stationary.
+● We would now confirm our claim of stationarity with advanced tests like ADF.
+
+## Augmented Dickey-Fuller Test (ADF)
+Augmented Dickey-Fuller test, also known as ADF test, is a statistical test used to determine
+whether a series is stationary or not. Mostly with the ADF test we can prove that the statistical
+properties of the time series, which are mean, variance and autocorrelation, does not change over
+time. When we did the Augmented Dickey-Fuller Test (ADF) on our actual observed point, we
+discovered the value of the ADF test as 2.27 and the p-value to be around 0.99
+
+Our interpretation for the Augmented Dickey-Fuller Test (ADF) was that as the ADF value is
+positive, the time series of the actual data point is non-stationary. Also, p-value which is higher
+than >0.05 helps in rejecting the null hypothesis. Hence our previous claim of stationarity is
+rejected with the Augmented Dickey-Fuller Test (ADF).
+For further analysis, if we need to make sure the series is stationary. For this we can either do
+differencing or advanced methods like detrending, where we remove trends like nonlinear trends.
+
+![image](https://github.com/user-attachments/assets/d630c1b1-4539-489b-be9b-b20b6ff2ff3e)
+
+we will go with a differencing methodology. We consider first
+differencing for the transformed Augmented Dickey-Fuller Test (ADF). With the first differencing
+we received a new ADF test value to be around -8.772, which is a large negative value. While
+comparing critical values, the ADF statistics also suggested that it has more negative values than
+the critical value, which can help in rejecting the null hypothesis. Other values at 1%, 5% and 10%
+also recommend rejection of the null hypothesis at all significance levels. While comparing pvalue, it was discovered to be around 2.49e-14
+As the series is stationary now, we can proceed with further modeling. 
+
+## Fractional differencing:
+Fractional differencing is a method to transform a nonstationary time series into a stationary one
+while preserving information. This is useful to deal with long memory processes of time series that
+exhibit persistent dependence over long time horizons. For fractional differencing we tried to
+incorporate the code from the kaggle source.
+
+![image](https://github.com/user-attachments/assets/3386b3fb-faeb-4ff0-8d3e-3a6a75039297
+
+Fractional differencing indeed allows a smooth transition in the weight when applied to past
+values.
+Comparing the result of fractional differencing vs traditional differencing 
+
+![image](https://github.com/user-attachments/assets/48742a8e-b7b7-4f91-859b-5e8f58a25dff)
+
+Fractional differencing can be utilized when there are case of long memory in data. 
+
+## MLP for Time Series Prediction
+
+we discuss a predictive model we developed that forecasts NVIDIA's future stock
+prices based on various historical data points. Our model used past stock prices, their logarithmic
+transformations, and fractionally differenced returns to predict future price movements.
+Specifically, we built a Multi-Layer Perceptron (MLP) model, a type of artificial neural network
+known for capturing complex relationships in data.
+We developed three models, each trained on different transformations of the time series data.
+We developed three MLP models based on different transformations of the time series data. The
+first model used past closing prices in their original form to predict future prices, capturing trends
+but struggling with non-stationary behavior. The second model was trained on the stationary
+version of the time series, where the mean and variance remain stable over time, allowing it to
+focus on short-term fluctuations. The third model applied fractional differencing, a technique that
+balances trend preservation with stationarity, providing an adjusted dataset for training.
+The model consists of three layers:
+1. The first hidden layer with 64 neurons,
+2. The second with 32 neurons, and
+3. An output layer with a single neuron that predicts the future stock price.
+We leveraged the ReLU activation function in the hidden layers to introduce non-linearity and the
+Adam optimizer for training, minimizing errors with the mean squared error (MSE) loss function,
+Goodfellow et al. (2016). This setup allows the model to learn from the past behavior of the stock
+and predict future movements based on those patterns.
+
+![image](https://github.com/user-attachments/assets/cfee1d8e-672d-4b92-b7ac-2630c047dc3e)
+
+As expected, the Fractionally Differenced Model had a higher training R² of 90% and a test R² of
+84%, performing exceptionally better than all the models. This suggests that while fractionally
+differenced data can improve predictions to a greater extent, Guo et al. (2022).
+
+## Time Series Prediction under Convolutional Neural Network (CNN)
+Convolutional Neural Networks (CNNs) are used for image data, but they can also be applied to
+time series data by transforming the time series into a suitable format (e.g., images or 2D
+representations). The Gramian Angular Field (GAF) is a technique to transform a 1D time series
+into a 2D image representation. This allows CNNs to process time series data as if it were image
+data.
+The GAF below is a representation of lagged time series when we build and train a CNN that is
+designed to predict the level of the time series.
+
+![image](https://github.com/user-attachments/assets/fbfbbda2-042a-4369-819e-36285844c4fe)
+
+Given the level of time series under CNN for Nvidia, the chart below shows actual and predicted
+prices for different time steps. The chart below shows that the predicted prices and actual prices
+vary for the different time steps for the level of time series. A stationary time series may show
+otherwise.
+
+![image](https://github.com/user-attachments/assets/6353eff0-2e92-41fb-89fc-11ee55a1d489)
+
+For stationary time series, the GAF below is a representation when we build and train a CNN that
+is designed to predict the stationary version of time series. 
+
+
+![image](https://github.com/user-attachments/assets/92924fae-fe0c-4afb-a92a-25f338f27f76)
+
+From interpretation perspective, diagonal pattern did show strong autocorrelation for all the 3 lags
+value. For all the lags it exhibit similarity and can be concluded to some extent it has consistent
+pattern. From this pattern we can summarize that the model (GAF+ CNN) from training data it
+seems to have utility in prediction.
+Given the stationary time series under CNN for Nvidia, the chart below shows actual and predicted
+prices for different time steps. Comparing a stationary time series to the level of time series, this
+model shows that the actual and predicted prices are very close, albeit the model prediction is less
+volatile compared with reality.
+
+![image](https://github.com/user-attachments/assets/d4d38082-e23d-4066-ba2a-f4d696a8369f)
+
+However, for MLP using stationary time series, the actual and predicted prices are not really close
+for most of the time steps as demonstrated in the chart below.
+
+![image](https://github.com/user-attachments/assets/f839e1cb-5f8b-4170-b2a7-d6b140787def)
+
+For fractionally differenced time series, the GAF below is a representation when we build and train
+a CNN that is designed to predict the fractionally differenced of the time series.
+
+![image](https://github.com/user-attachments/assets/b084dce5-196b-4d27-984d-14c97c571fd4)
+
+Given the fractionally differenced time series under CNN for Nvidia, the chart below shows actual
+and predicted prices for different time steps
+
+![image](https://github.com/user-attachments/assets/a5ec42ac-d710-41d1-9149-0ab27f27b558)
+
+
+We adopted Mean Square Error (MSE) and Mean Absolute Error (MAE) to evaluate the prediction
+performance of the three models.
+This MSE calculates the average squared difference between the predicted and true values. Also,
+the lower MSE indicates better model performance, indicating that the model predictions are closer
+to the true values. However, the MAE is less sensitive to outliers than MSE because it considers
+the absolute difference rather than squaring it. Additionally, Train R² measures how well the model
+explains the variance in the training data while Test R² measures how well the model generalizes
+to unseen data. 
+
+![image](https://github.com/user-attachments/assets/68b144b3-8311-4c9d-a445-4d688412c817)
+
+Time series Level for CNN showed a very low train loss and very low train MAE, indicating good
+fit and high accuracy to the training data set respectively. In conclusion, the model performs
+exceptionally well on the training data (92%) but fails to generalize to the test data due to the very
+poor Test R².
+
+For stationary time series for MLP, the result showed a low train loss and low train MAE,
+indicating a reasonable fit and good accuracy on the training data respectively. This model also
+performs well on the training data (89%) but struggles to generalize the test data. The negative
+Test R² indicates overfitting, similar to the Level-CNN model.
+Fractionally differenced CNN also showed a very low train loss and very low train MAE,
+indicating good fit and high accuracy to the training data set respectively. The model performs
+well on the training data (89%) but still fails to generalize to the test data. The negative Test R²
+indicates overfitting, although less severe to the other models.
+The three models are deemed overfitted as they fail to generalize the test data. To improve model
+performance, we should consider regularization and simplifying the models.
+
+![image](https://github.com/user-attachments/assets/1454e75d-43c3-4635-b5e6-ac8f2b992451)
+
+In summary, the Fractionally Differenced-CNN has the lowest MSE and MAE values, indicating
+the best performance on the test set. This aligns with the fact that this model generalizes slightly
+better than the others (Test R² = -2.75). This is because it retains more information about the time
+series, which likely helps the model make better predictions
+
+
+## Comparing Results under MLP and CNN Architectures 
+
+Considering the historical time series data for NVIDIA, and stock prediction based on different
+models. We expect varied model outcomes in terms of model accuracy, training and
+interpretability.
+MLPs generally treat data as a one-dimensional vector, that is, each input feature is independent
+of others, and the model processes them as such. In time series forecasting, MLPs deploy features
+like lagging to make predictions. The shortcoming of MLP is that it does not inherently account
+for spatial dependencies in data which may limit their ability to model time series with long term
+trends or seasonality. However, CNN due to its convolutional layers performs well at spatial
+patterns and local dependencies. Using GAF, we are able to process data as a 2D grid, where it
+can learn features between nearest data points. Thisis the reason why CNN is suitable for capturing
+trends and seasonality as well as capturing intricate patterns which would not be the case in MLPs.
+MLPs are effective for capturing short term trends if lagging features are well selected. However,
+where patterns often repeat themselves overtime, CNNs work best to handle such patterns over
+small temporal windows.
+MLPs also require less computational resources compared to CNN because CNN by design takes
+time in determining the appropriate number of layers and neurons, as well as the fact that it can
+involve GAF transformation.
+MLPs lack interpretability because it treats time series as a flat vector and relies on dense layers
+which makes it difficult to understand how model predictions are derived. CNN, which looks like
+a black box model, through its structure of convolutional layer makes it easier to interpret spatial
+features at different layers. 
+
+
+
+
+
+
+
+
+
+
 
 
