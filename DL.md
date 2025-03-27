@@ -473,22 +473,141 @@ h-code-a7aac0aa85c0/.
 ![image](https://github.com/user-attachments/assets/8a179872-c4e5-4ee6-9527-935300596e3f)
 
 Code: 
+![image](https://github.com/user-attachments/assets/ead6b8ab-17b0-43c8-af98-ff27bfdc6e7e)
+
+we will select Bitcoin as equity and analyze using various deep learning models.
+We utilized the Yahoo Finance API to get the Bitcoin price in USD. For compliance of 2000 time series points, we used dates from 8th Sept 2017 till 1st March 2023. Date selection was random just to capture 2000 data points for time series data
+
+While analyzing the graph we concluded that during the initial period, the Bitcoin price remained relatively low and stable and fl uctuation range was between 5000 - 10000 USD. During early 2020 there was a signifi cant surge in the in price of bitcoin and while researching this period was coined as Bitcoin bull run period. Signifi cant price decline in 2022 onwards. As of writing this report price of 84,501 USD.
 
 
+![image](https://github.com/user-attachments/assets/c9e3c3cd-304c-4998-bffe-7cdc7d440b05)
+
+While analyzing we also came to conclusion that bitcoin has high volatility but still shows growth trend over the years. We also analyzed the trading volume over the time and there was noticeable surge during the time period of 2020- 2021. Extremely high trading volume migh have lead to high proce volatility and market excitement. A stablization period was also noticed during the year 2022-2023
+
+![image](https://github.com/user-attachments/assets/11b39e51-56be-4452-a585-e2e86d7f4690)
+
+There was correlation between trading volume and price movement of bitcoin during the time of 2020 -2021. One of the hypothesis we drawn from analyzing trading volume is due to higher liquidity of Bitcoin as an asset , it might be easier for traders to buy and sell and that might have affected sudden price increase of BTC.
+
+![image](https://github.com/user-attachments/assets/7786a873-e71c-431b-a2df-11fb2a9266d1)
+
+## Creating predictive model
+we are creating a predictive model with intentional likeage. Likeage is likely to occur when the target incorporates information that would not be available at the time of prediction. In this stepwe tried to forecast a 14-day ahead return using cumulative return for 1 day, 7 day and 30-day window as a features input. Using the same logic we defi ned X and Y accordingly and then did train test split considering 80% data for training. During the split of data into training and testing we ensured that the time order of time series is preserved and also reshaped the input data into format suitable for LSTM model as well as CNN model
 
 
+#DL models
+1. LSTM model
+2. CNN -GAF Model
+
+   
+## LSTM Model Architecture for Prediction
+For Long short-term memory model , as for sequential data we designed a regression task based model which can identify the trend and predict a continuous value (14 day return). Talking about architecture of this model , to minimize the complexity we have set the number of hidden layers to be 50 and added a 20% dropout rate for regularization to avoid the scenarios of overfi tting. We created LSTM model with sequential model by adding a layer after another and used 80:20 for train test split. For the task of prediction this LSTM model is fully connected model with a dense layer and a dropout layer. Model ws compiled using adam optimizer which seems to be an effi cient optimization for our problem statement and to defi ne Loss we utilized Mean squared error as we are dealing with regularization problem. To experiment this in further scenarios we have stored training data into a variable
+LSTM Model Performance
+After training the LSTM model with selected compiled parameter we observed that model was able to learn to fi t on training data as we have received low mean squared error score but it fails to generalize on unseen data as we received negative R-squared score. Our LSTM model with predefi ned parameters seems to be severely overfitting
+
+![image](https://github.com/user-attachments/assets/57568f8b-9ebc-4c12-940e-63b7487d5e3a
 
 
+## CNN with GAF
+As seen in our last model LSTM , where even after model trained perfectly on training data out of sample R squared score suggested that the model is overfi tting. Well , this is traditional issue of time series data as time series are sequential in nature deep learning models like LSTM often misses to identify spatial pattern. Using Gramian Angualr fi led (GAF) it transforms one dimensional time series data to two dimensional time series data. For our problem statement we are predicting again the next 14 days return over the period of 10 year [Window size] . For experimenting purpose the choice of this period (window size) is random
+![image](https://github.com/user-attachments/assets/e0a890b7-e678-4907-b320-276c3df6e63a)
+
+From the predefi ned data set , while analyzing 14 days return data into sequence of 10 days we visualized the fi rst 240 sequences and discovered overlapping of return value over time.
+While deciding the GAF architecture, there were two main GAF
+GASF : Gramian Angular summation fi eld that capture correlation by summing the trignometric angle.
+GADF : Gramian angular difference fi eld which capture the same correlation by differencing the tignometrid angle
 
 
+![image](https://github.com/user-attachments/assets/6ae821af-6f87-4394-b37a-46e7d499c380)
+
+For proper training of data which can be utilized by CNN as well we transform the data which can process images. By converting time series data into image , CNN can also utilize the feature extraction capabilities. Original time series data was scaled and normalized and gramiam matrix was calculated to fi nd the angular difference in the polar coordinate system. Time series when transformed to 2D image with GAF encodes the temporal correlation of time series data and this act as input for CNN.
+![image](https://github.com/user-attachments/assets/cd9cc651-c174-422d-9e3f-e5c218b04d07)
+
+For CNN (Convolutional Neural Network) we utilize binary classifi cation where model is able to handle image like input to extract meaningful feature and classify into two categories. The input layer of CNN accepts the image of shape (10,10,1). In terms of architecture of CNN , its been constructed with three convolutional layer with Relu activation which ensure max pooling for dimensionality reduction. In fi rst layer of CNN there is 16 fi lters , and second layers of CNN has 32 fi lters and fi nal layer has 64 fi lters. Final layer is succeeded by a fl atten layer which converts 2D image into 1 D image. A dropout layer is utilized for regularization with 50% dropout rate and an output layer is based on sigmoid activation function as we need binary classifi cation.
 
 
+##Model Performance
+While training the CNN model accuracy was 56% and this refl ect the impact of likeage introduced in earlier step. Leakage allows the model to access future or test data dyring training which migh led to optimistic result.
+Also one of the key observation was that precision is equal for both true and false class and imbalance in recall indicates that CNN model favours certain prediction which can be a problem during generalization phase with out of box data.
+
+![image](https://github.com/user-attachments/assets/a2ee3c53-7e3e-43b0-a2be-d45ae0c9807d)
+
+● LSTM model performed better than CNN with GAF model
+
+● Model performance can be impacted by skewness generated due to data leakage (which can be verifi ed by dotted return)
 
 
+## Non Anchored walk forward Method
+Walk forward optimization simulate on how a model would perform in real word scenario within time sequential environment. As the model derived earlier we did consider in sampling performance metrics as well as out of the box testing. In non anchored walk forward approach the starting point of in the sample and out of the sample period move forward with each interaction. Here we split the data into training and testing with 500 observation. After testing the model for performance the window will walk forward by 500 observation and the process will repeat
+Walk forward Evalutation
+While evaluating LSTM we received RMSE to be around 0.04 but while calculating out of sample R squared it came around -0.01. We faced similar issue about model being trained perfectly on training data but fails to generalize during out of sample testing.
+For CNN walk forward accuracy was around 99.3%
 
 
+## Walk forward Model with training set of 100 Observation
+
+In this model we divided train test split of 500 observation into 100 observation set.
+
+![image](https://github.com/user-attachments/assets/2fa4bfe1-d61a-4ecc-a5bf-cb5dd8e29a43)
+
+The idea that we want to capture here was if there is more frequent training does it adapts faster to regime change.
+But when we compared 500 training data and 500 test observation with 500 training and 100 test we did realise that with smaller test observation there is higher risk of overfi tting
 
 
+## Backtest scenario comparison
+
+LSTM model observation
+● In step 1 we observed LSTM model when deployed yields returns of 26.50% and model from step 1 defi nes that it has higher predictive power
+
+● When same data set was split into training and testing (500/500 split) and rolling split (500/100) the performance deteriorated significantly
+
+● Out of sample R squared dropped to non zero and negative value and RMSE value almost remained constant which signifi es it has poor generalization under more robust validation scenarios
+
+
+CNN Model observation
+● In comparison to step 1 , CNN model show the return of -180% when compared with buy and hold strategy which replicates it is extremely sensitive to initial train - test and also possibility of overfi tting
+
+● In step 2 CNN classifi cation performance was near perfect 90% and 87% which is statistically not making sense as precision and recall were also consistent in both the scenario
+
+● Even if the precision and recall is same it can be concluded that when compared to LSTM model it seems CNN with GAF has better ability for generalization
+
+● May be a better dropout should be used to reduce performance of the CNN model
+Final conclusion : Shift from step 1 to step 2 clearly shows how robust backtesting like walk-forward validation reduces infl ated performance estimates and reveals the actual model robustness under time series parameters.
+
+## Can backtest overfi tting due to leakage
+![image](https://github.com/user-attachments/assets/df9d7f1e-8b09-4f7e-b369-703b131b8f16)
+
+
+With the above observation we can conclude
+- LSTM model in both the methodology have poor generalization when tested with out of sample data
+- CNN model did show sharp decline in performanceand also this can be due to overfi tting of model in training 500 observation in each set (training - testing)
+- Overfi tting of model can be also due data leakage when compared to result from step 1
+- Static test train split will inherit bias which is a known issue with time series data
+- With non anchored split leakage may still happens due to overlapping of test and training data
+- Non anchored rolling window approach is consider as most accurate and refl ect simulation similar to real world model deployment
+- Even if the model are continuously retrained it will never expose future data during training
+
+# Allevating data leakage in Walk forward backtest
+
+As per the ask , to reduce information leakage between training and test we introduce ‘Gap Window’ between the end of training set and also at the start of test set . This Gap window will create a buffer zone to eliminate any kind of correlation between data point and also to avoid a spillover of the data features from training and test . This will ensure no psosiblity of pattern transformed from training to test and gap window ensures that future data is truly unseen and cannot infl uence any training decision. Gap window completely avoid rolling statistics and look ahead bias
+
+![image](https://github.com/user-attachments/assets/3279ef27-15dc-4ac8-9ed7-9aa5e9393b84)
+
+## Result discussion
+
+● With 500/500 split there is low risk of overfi tting and it also comes with lower cost of computation when compares with 500/100 split
+
+● Adaptablity is slower in 500/500 split
+
+● Stability of MSE is lower in 500/500 split
+
+● Leake is eliminated by strict time based isolation -’Gap window’
+
+● Overfi ting issue when compared to step 3 b with step 3 c has been largely addressed
+
+● F1 score is 86% for both step 3 b and step 3c
+
+● Overall to conclude the report - inclusion of temporal gap is essential to avoid look ahead which helps in achieving robust model evaluation and more realistic walk forward setup
 
 
 
