@@ -288,8 +288,10 @@ doi:10.1016/S0925-2312(01)00702-0.
 7. TOTH, Daniel J. "Neural Network (MLP) for Time Series Forecasting in Practice."
 Towards Data Science, https://towardsdatascience.com/neural-network-mlp-for-timeseries-forecasting-in-practice-04c47c1e3711.
 
+-----------------------------
+-----------------------------
 
-Project 2 : LSTM single output vs Multioutput model  
+## Project 2 : LSTM single output vs Multioutput model  
 
 ![image](https://github.com/user-attachments/assets/e1753d61-6424-49da-b99a-c938954464f5)
 
