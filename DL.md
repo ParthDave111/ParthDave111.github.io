@@ -244,6 +244,55 @@ which makes it difficult to understand how model predictions are derived. CNN, w
 a black box model, through its structure of convolutional layer makes it easier to interpret spatial
 features at different layers. 
 
+****![image](https://github.com/user-attachments/assets/622a60dc-ee71-4aef-814e-eef4757fac6e)
+
+Given our R² result on training and test data under the two different approaches, The MLP models
+outperform the CNN models across all three-time series (Level, Stationary, and Fractionally
+Differenced). The Fractionally Differenced MLP is the best-performing model, with high Train R²
+and Test R² values. However, the level MLP performs well but may be less robust to Fractionally
+Differenced MLP. In order to improve performance, we would focus on optimizing the MLP
+models and addressing overfitting in the CNN models.
+
+![image](https://github.com/user-attachments/assets/f8fc596f-d67b-4f50-b18f-6282abd3ad1f)
+Comparing all the results from step 2 and step 3 above created table act as a summary table. When
+we compare level time series for MLP model the performance is excellent and shows good fit with
+good generalization but when we compare with GAF model with CNN it was overfitted. Model
+fits well with training data but fails with test data. When we compared stationary time series, MLP
+model developed was poor fitted and poorly generalized while GAF with CNN and GAF with
+MLP were good fit model in training but very poor while generalization is considered.
+Performance wise GAF models were overfitted models. Finally, fractionally differenced time
+series with MLP model works well with good fitting and good generalization while GAF with
+CNN has better results in train but poor result in testing. Overall, we can conclude GAF model
+works well with training data set but fails miserably with testing data or predicted data.
+Finally, if we have to select a model for prediction that would be Fractionally differenced
+time series model with MLP modeling.
+
+References for Prpject 1
+
+1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press
+https://www.deeplearningbook.org/
+2. Guo, Y., Chen, Y., Wang, C., & Li, Y. (2022). "Gramian Angular Field-Based
+Convolutional Neural Network for Multivariate Time Series Classification." Sensors,
+22(4), 1617.
+3. Aslanidis, Theodoros. "Time Series Forecasting with ANNs." Kaggle,
+https://www.kaggle.com/code/theodorosaslanidis/time-series-forecasting-with-anns.
+4. Fischer, Thomas, and Christopher Krauss. "Deep Learning with Long Short-Term Memory
+Networks for Financial Market Predictions." European Journal of Operational Research,
+vol. 270, no. 2, 2018, pp. 654-69. ScienceDirect, doi:10.1016/j.ejor.2017.11.005.
+5. Sezer, Omer Gökçe, and A. Murat Özbayoglu. "Algorithmic Financial Trading with Deep
+Convolutional Neural Networks: Time Series to Image Conversion Approach." Applied
+Soft Computing, vol. 70, 2018, pp. 531-48. ScienceDirect, doi:10.1016/j.asoc.2018.05.025
+6. Zhang, G. Peter, et al. "Time Series Forecasting Using a Hybrid ARIMA and Neural
+Network Model." Neurocomputing, vol. 50, 2003, pp. 159-75. ScienceDirect,
+doi:10.1016/S0925-2312(01)00702-0.
+7. TOTH, Daniel J. "Neural Network (MLP) for Time Series Forecasting in Practice."
+Towards Data Science, https://towardsdatascience.com/neural-network-mlp-for-timeseries-forecasting-in-practice-04c47c1e3711.
+
+
+
+
+
+
 
 
 
