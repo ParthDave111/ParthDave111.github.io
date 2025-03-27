@@ -297,6 +297,61 @@ Image generated from IMAGEN MODEL (Gemini)
 
 
 
+Using Yahoo finance library, all required data set of different asset classes were downloaded from the period of Jan 01, 2018 to Dec 30th 2022. 
+
+![image](https://github.com/user-attachments/assets/8687a864-81c3-476d-bf89-fded426af1c8)
+
+In terms of validation and training, throughout the report, we will be considering 20% of dataset for validation for all models, including single LSTM and multi-output model.
+
+
+![image](https://github.com/user-attachments/assets/3982981e-b71b-4d7c-8287-fdd5dd315be5)
+
+
+SPY shows a significant up trend and it did indicate strong growth looking at time series. There is a clear display of volatility and drop in 2020, which can be interpreted by Global event like those covered and there is also a strong recovery. 
+For gold data there is some moderate up Trend with some minor fluctuation. Comparing SPY  with Gold (GLD)  it seems gold is a stable asset as it is  less volatile in comparison to SPY
+Fixed income (TLT) demonstrated up trend till 2021. May be interest rates might have impacted after 2021. Further investigation might be required to make this claim.
+SHY  : asset with least volatility among all the five and there is minimal price change within the time frame
+Interestingly DBO also suggest flat trend , DBO was impacted by covid  but trend was not visible as the range of graph was between 0-400
+
+![image](https://github.com/user-attachments/assets/1a6831d1-062e-4ec2-ab7d-8f64bf3f6892)
+
+The returns of DBO exhibit significant negative skew and high kurtosis, indicating more frequent large negative returns and extreme movements, while GLD shows slight negative skew and normal kurtosis, suggesting more balanced returns with fewer extreme events. SHY has a slight positive skew and high kurtosis, indicating a tendency for small positive returns with a higher probability of extreme movements. SPY and TLT show similar behavior, with SPY having negative skew and very high kurtosis, while TLT has positive skew and high kurtosis, indicating relatively stable but with potential for larger extreme returns.Oliveira and de M. (2014)
+
+
+![image](https://github.com/user-attachments/assets/7d0269f3-d9b9-4956-a8f4-c1ee0bfbe42a)
+
+The histograms of returns for all ETFs show a bell-shaped curve, suggesting that the distributions of returns approximate normality. Additionally, the Augmented Dickey-Fuller (ADF) test on the returns confirms their stationarity (p-values far below 0.05), indicating that the time series are mean-reverting and do not contain a unit root (Shumway & Stoffer, 2017).
+
+![image](https://github.com/user-attachments/assets/18bd3b6a-3af7-4a7b-a23c-13084080cb49)
+
+## Model Exploration 
+ tried to navigate to various LSTM models to verify and validate the best model. Final decision was made on the basis of a model which was computationally efficient
+Experimenting with LSTM
+
+![image](https://github.com/user-attachments/assets/d1484e3d-55d5-4e4f-8a95-171e31a636da)
+
+![image](https://github.com/user-attachments/assets/ae7be664-82b0-44df-8252-cff64b958759)
+
+Additionally, bidirectional LSTM and LSTM with convolutional took extended time period to complete epoch and it seems they are computationally inefficient with respect to data we have.
+After considering RMSE and MAE it was decided to leverage ECONDER -DECODER LSTM based model for future training of all the 5 equities. 
+
+In this step, we develop and evaluate a deep learning framework to forecast short-term market trends across five major asset classes. The goal is to predict the 25-day ahead return for each ETF using past information from its own return time series.
+
+We employ Long Short-Term Memory (LSTM) neural networks due to their effectiveness in modeling temporal dependencies in financial time series data. For each asset class, we construct a dedicated LSTM model that takes in lagged returns (1 day,return,5 & 10 days rolling mean and 5 & 10 day standard deviation) as inputs and outputs the expected return 25 days into the future. These are chosen as a sample for the demonstration purposes. The model architecture includes a combination of LSTM and dense layers, with dropout regularization to prevent overfitting.
+
+After training, we evaluate both in-sample and out-of-sample predictive performance across asset classes using standard metrics such as Mean Squared Error (MSE) and R-squared (R²).
+
+Subsequently, we use the model predictions to implement a dynamic trading strategy. The strategy involves rebalancing the portfolio every 25 days by going long on the two assets with the highest predicted returns and short on the two with the lowest predicted returns. The performance of this strategy is backtested and compared to a passive buy-and-hold strategy of an equally weighted portfolio of the five ETFs.
+
+![image](https://github.com/user-attachments/assets/c9bcde61-311c-4050-95fa-0b934b4218d5)
+![image](https://github.com/user-attachments/assets/6420a4f2-60e3-4426-bca0-2c278b75614a)
+
+
+
+
+
+
+
 
 
 
