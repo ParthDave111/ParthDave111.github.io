@@ -14,6 +14,11 @@ Hi , My name is Parth! This GitHub page summarizes what I do after my 9-5.
 
 ## Certification [Continuous Learning] 
 
+## 2025
+
+![image](https://github.com/user-attachments/assets/be6572d9-40b0-4b1c-91c7-80ad07ad342f)
+
+
 # 2024 
 
 # Oracle Generative AI Professional 
